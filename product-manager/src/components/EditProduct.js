@@ -38,7 +38,7 @@ const EditProduct = ( props ) => {
         );
     } else {
         return (
-            <div>
+            <div className="editMain">
                 <div className="productManagerDiv">
                     <h1 className="headingTitle">Edit Product Form</h1>
                 </div>
@@ -46,11 +46,11 @@ const EditProduct = ( props ) => {
                     return(
                     <form key={index} className="formContainer2" onSubmit={onSubmitHandler}>
                         <div className="titleBlock2">
-                            <label key={index} className="labelBlock">Title</label><br/>
+                            <label key={index} className="labelBlock2">Title</label><br/>
                             <input className="titleInput2" name="title" placeholder={item.title} type="text" onChange={(e)=>setTitle(e.target.value)}/>
                         </div>
                         <div className="titleBlock2">
-                            <label className="labelBlock" >Price: $</label><br/>
+                            <label className="labelBlock2" >Price: $</label><br/>
                             <input onChange={(e)=>setPrice(e.target.value)} className="titleInput2" name="price" placeholder={item.price} type="text"/>
                         </div>
                         <div className="descBlock">

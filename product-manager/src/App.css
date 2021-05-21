@@ -5,9 +5,7 @@ body {
 /** App.js page container ----------------------------------------*/
 #appContainer {
   display: flex;
-  justify-content: center;
   height: 850px;
-  width: 1380px;
 }
 
 /**Main.js page container ----------------------------------------*/
@@ -15,9 +13,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
-  height: 1000px;
-  width: 890px;
+  margin-top: -30px;
+  margin-left: 5%;
+  height: 850px;
+  width: 1000px;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(90deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, .25), rgba(0, 0, 0, .25), rgba(255, 255, 255, .25));
+	background-size: 400% 400%;
+  opacity: 1;
 }
 
 /** Form.js Page CSS Starts Here ---------------------------------*/
@@ -26,19 +29,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .headingTitle {
+  width: 100%;
   text-align: center;
-  color: #686868;
-  height: 5px;
+  color: #0f2546;
+  margin-bottom: -10px;
 }
 
 .mottoMini {
   height: 10px;
-  color: #686868;
+  color: white;
   font-style: italic;
 }
 
@@ -62,6 +64,7 @@ body {
   padding: 5px;
   border-radius: 5px;
   background-color: #e8e8e8;
+  box-shadow: 0px 0px 15px 12px rgba(54, 54, 54, 0.2);
 }
 
 /* Input Block Labels */
@@ -99,6 +102,7 @@ body {
   border: none;
   color: #484848;
   font-weight: bold;
+  box-shadow: 0px 0px 15px 12px rgba(54, 54, 54, 0.2);
 }
 
 
@@ -109,6 +113,10 @@ body {
   width: 500px;
   display: flex;
   flex-direction: column;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  overflow: scroll;
+  box-shadow: 0px 0px 15px 12px rgba(77, 77, 77, 0.452);
 }
 
 .dlBanner{
@@ -158,11 +166,11 @@ body {
 }
 
 .bulletPoint{
-  color: #585858; 
+  color: #0f2546; 
 }
 .productName{
   flex: 1;
-  color: #585858;
+  color: #0f2546;
   text-align: left;
   margin-left: 30px;
   font-style: italic;
@@ -172,10 +180,11 @@ body {
 #dButton1 {
   margin: auto;
   height: 25px;
-  width: 60px;
+  width: 90px;
   background-color: red;
   border: none;
-  font-size: .7rem;
+  font-size: .8rem;
+  border-radius: 5px;
 }
 
 /** Single Product Display -----------------------------------*/
@@ -183,11 +192,17 @@ body {
   width: 750px;
   height: 790px;
   border: 2px solid #c8c8c8;
-  margin-top: 70px;
+  margin-top: 10px;
+  margin-left: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(90deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, .25), rgba(0, 0, 0, .25), rgba(255, 255, 255, .25));
+	background-size: 400% 400%;
+  opacity: 1;
+
 }
 
 .innerOPContainer {
@@ -239,7 +254,7 @@ body {
   align-items: center; 
   justify-content: center;
   font-size: 2rem;
-  color: #585858;
+  color: #c8c8c8;
 }
 
 #dollarAmount {
@@ -264,7 +279,7 @@ body {
 .productDesc {
   width: 600px;
   font-size: 1.8rem;
-  color: #585858;
+  color: #0f2546;
   text-align: center;
   border-bottom: 2px solid #c8c8c8;
 }
@@ -272,7 +287,7 @@ body {
 #description {
   font-style: italic;
   font-size: 2rem;
-  color: #484848;
+  color: #c8c8c8;
   font-weight: normal;
 }
 
@@ -325,6 +340,8 @@ body {
   border: 1px solid #c8c8c8;
   font-size: 1rem;
   color: #383838;
+  font-size: 1.5rem;
+  border-radius: 10px;
 }
 
 #dButton2 {
@@ -332,19 +349,41 @@ body {
   width: 150px;
   background-color: red;
   border: none;
-  font-size: 1rem;
+  color: #383838;
+  font-size: 1.5rem;
+  border-radius: 10px;
 }
 
 
 /** EDIT Form ---------------------------------------------*/
+.editMain {
+  margin: auto;
+  box-shadow: 0px 0px 15px 12px rgba(39, 39, 39, 0.452);
+}
+
 .formContainer2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 440px;
-  width: 360px;
-  margin-top: 100px;
-  background-color: #e8e8e8;
+  height: 640px;
+  width: 560px;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(90deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, .25), rgba(0, 0, 0, .25), rgba(255, 255, 255, .25));
+	background-size: 400% 400%;
+  opacity: 1;
+}
+
+.labelBlock2 {
+  flex: 1;
+  color: #787878;
+  font-weight: bold;
+  background-color: #0f2546;
+  height: 25px;
+  margin-right: -10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-top: 8px;
+  text-align: center;
 }
 
 .titleBlock2 {
@@ -357,7 +396,6 @@ body {
   text-align: center;
   padding: 5px;
   border-radius: 5px;
-  background-color: #e8e8e8;
 }
 
 .titleInput2 {
@@ -369,7 +407,8 @@ body {
   width: 225px;
   text-align: center;
   padding: 5px;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   border: none;
   background-color: #ffff;
 }
@@ -377,22 +416,21 @@ body {
 .descBlock {
   display: flex;
   flex-direction: column;
-  height: 240px;
   width: 335px;
   text-align: center;
   padding: 5px;
   border-radius: 5px;
-  background-color: #e8e8e8;
 }
 
 #descText {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 335px;
+  width: 350px;
   display: flex;
   text-align: center;
-  color: #787878;
+  color: #0f2546;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
@@ -402,8 +440,8 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   margin: auto;
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 300px;
   overflow: auto;
   word-wrap: normal !important;
 }
@@ -413,7 +451,9 @@ body {
   width: 150px;
   margin-bottom: 10px;
   border: 1px solid #a8a8a8;
-  font-size: 1rem;
-  color: #383838;
+  font-size: 1.4rem;
+  color: #0f2546;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 

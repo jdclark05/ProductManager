@@ -4,6 +4,7 @@ import './App.css';
 import Main from './views/Main';
 import OneProductDisplay from './components/OneProductDisplay';
 import EditProduct from './components/EditProduct';
+import appBackground from './components/images/simpleLines.png';
 
 function App() {
   const [id, setId] = useState("");
@@ -20,8 +21,19 @@ function App() {
     navigate(`/${id}/edit`)
   }
 
+  const styles = {
+    backgroundImage: `url(${appBackground})`,
+    backgroundSize: 'cover', 
+    backgroundRepeat: 'cover',
+    width: 'cover',
+    height: '100%;',
+    padding: '5%',
+    marginBottom: '0px',
+    backdropFilter: 'opacity(.5)'
+};
+
   return (
-    <div id="appContainer">
+    <div id="appContainer" style={styles}>
             <Router>
                     <Main path="/" onOneProdNavigate={ oneProdNavigate }/>
                     <OneProductDisplay path="/:id" id={ id } onEditNavigate={ editNavigate } />
